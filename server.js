@@ -11,6 +11,9 @@ fetch('https://github.com/')
         fs.writeFile('./plain-txt-html.log', body, function (err) {
             if (err) throw err;
         });
+        fs.writeFile('./plain-txt-html.html', body, function (err) {
+            if (err) throw err;
+        });
     });
 
 // json
@@ -39,7 +42,7 @@ fetch('https://httpbin.org/post', { method: 'POST', body: 'a=1' })
         console.log(json.url)
     });
 
-// post with json
+// post with json 
 const body = { a: 1 };
 
 fetch('https://httpbin.org/post', {
