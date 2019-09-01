@@ -8,3 +8,9 @@ fetch requests that will:
 - send a simple post
 - get data and send as json
 - get data and write plain text or HTML to file
+
+# Demo
+- git clone repo
+- npm i
+- node `server.js`
+> Check console and root dir for results
